@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import {IVideo} from './IVideo';
-import * as videoService from './VideoService';
+import {IVideo} from '../../schema/videoSchema';
+import * as videoService from '../../service/videoService';
 import VideoItem from './VideoItem';
 
 

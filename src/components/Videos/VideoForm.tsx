@@ -1,7 +1,7 @@
 import React,{ChangeEvent, FormEvent, useState, useEffect} from 'react';
 import {useHistory,useParams} from 'react-router-dom';
-import { IVideo } from './IVideo';
-import * as videoService from './VideoService';
+import {IVideo} from '../../schema/videoSchema';
+import * as videoService from '../../service/videoService';
 import {toast} from 'react-toastify';
 
 export interface VideoFormProps {

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { IVideo } from './IVideo';
+import { IVideo } from '../schema/videoSchema';
 
 const URL_BASE = "http://localhost:4000";
 

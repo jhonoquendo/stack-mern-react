@@ -1,9 +1,9 @@
 
 import * as React from 'react';
-import { IVideo } from './IVideo';
+import {IVideo} from '../../schema/videoSchema';
 import ReactPlayer from 'react-player';
 import {useHistory} from 'react-router-dom';
-import * as videoService from './VideoService';
+import * as videoService from '../../service/videoService';
 import {toast} from 'react-toastify';
 
 
@@ -31,7 +31,7 @@ const VideoItem: React.SFC<VideoItemProps> = ({video,loadVideos}: VideoItemProps
                 </div>
                 <p>{video.description}</p>
                 <div className="embed-responsive embed-responsive-16by9">
-                    <ReactPlayer url={video.url}/>
+                    <ReactPlayer url={video.url+'&origin=http://localhost:3000'}/>
                 </div>
                 
             </div>
